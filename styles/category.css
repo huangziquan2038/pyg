@@ -142,71 +142,39 @@ ul {
   z-index: 101;
   animation: fa-spin 1s infinite linear;
 }
-.layout {
-  width: 100vw;
-  height: 100vh;
-  max-width: 640px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-.pyg_header {
-  height: 45px;
-  background-color: #eee;
-  padding: 4px;
-}
 .pyg_content {
-  flex: 1;
+  display: flex;
+}
+.pyg_content > .left {
+  width: 100px;
+  text-align: center;
   overflow: scroll;
 }
-.pyg_goodsList .pyg_pbox {
+.pyg_content > .left > ul {
   width: 100%;
 }
-.pyg_goodsList .pyg_pbox > img {
+.pyg_content > .left > ul > li {
   width: 100%;
-  display: block;
+  height: 50px;
 }
-.pyg_goodsList .pyg_pbox > .pyg_sbox {
-  width: 50%;
-  float: left;
-  background-color: #ccc;
+.pyg_content > .left > ul > li > a {
+  width: 100%;
+  height: 100%;
   text-align: center;
-}
-.pyg_goodsList .pyg_pbox > .pyg_sbox > .pyg_good {
-  width: 100%;
-}
-.pyg_goodsList .pyg_pbox > .pyg_sbox > .pyg_good > img {
-  width: 100%;
+  line-height: 50px;
   display: block;
-}
-.pyg_goodsList .pyg_pbox > .pyg_sbox > .pyg_good > .pyg_desc {
+  font-size: 14px;
+  background-color: #eee;
   color: #333;
-  font-size: 13px;
-  margin: 5px 0;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
 }
-.pyg_goodsList .pyg_pbox > .pyg_sbox > .pyg_good > .pyg_price {
-  color: red;
-}
-.pyg_goodsList .pyg_pbox > .pyg_sbox > .pyg_btncate {
-  width: 80%;
-  display: block;
-  margin: 5px auto;
-}
-.pyg_footer {
-  height: 45px;
-}
-.pyg_nav {
-  padding: 15px;
-  display: flex;
+.pyg_content > .left > ul > li.active > a {
   background-color: #fff;
+  color: red;
+  border-right: none;
 }
-.pyg_nav > a {
+.pyg_content > .right {
   flex: 1;
-  text-align: center;
-  font-size: 13px;
-  color: #333;
-}
-.pyg_nav > a > img {
-  width: 50%;
-  display: inline-block;
+  background-color: #c01d1d;
 }
